@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from Auctions_WSDLService WSDL service -->
+
+  <service name="Auctions_WSDL" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://auctionServies.auction.jindal.com"/>
+      <parameter name="wsdlServiceElement" value="Auctions_WSDLService"/>
+      <parameter name="schemaQualified" value="http://auctionServies.auction.jindal.com"/>
+      <parameter name="wsdlServicePort" value="Auctions_WSDL"/>
+      <parameter name="className" value="com.jindal.auction.auctionServies.Auctions_WSDL"/>
+      <parameter name="wsdlPortType" value="Auctions_WSDL"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://auctionServies.auction.jindal.com" xmlns:retNS="http://auctionServies.auction.jindal.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="serviceConsumption" qname="operNS:serviceConsumption" returnQName="retNS:serviceConsumptionReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://auctionServies.auction.jindal.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:customerId" type="tns:string"/>
+        <parameter xmlns:pns="http://auctionServies.auction.jindal.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:productCode" type="tns:string"/>
+        <parameter xmlns:pns="http://auctionServies.auction.jindal.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:quantity" type="tns:string"/>
+        <parameter xmlns:pns="http://auctionServies.auction.jindal.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:uom" type="tns:string"/>
+        <parameter xmlns:pns="http://auctionServies.auction.jindal.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:date" type="tns:string"/>
+      </operation>
+      <parameter name="allowedMethods" value="serviceConsumption"/>
+
+  </service>
+</deployment>

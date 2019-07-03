@@ -1,0 +1,23 @@
+what,kind,bundleId,bundleVersion,description,time
+locale,sysinfo,,,"en_US",1361011286296
+processors,sysinfo,,,"4",1361011286296
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1361011286296
+java.runtime.version,sysinfo,,,"1.7.0_03-b05",1361011286296
+java.specification.name,sysinfo,,,"Java Platform API Specification",1361011286296
+java.specification.vendor,sysinfo,,,"Oracle Corporation",1361011286296
+java.specification.version,sysinfo,,,"1.7",1361011286296
+java.vendor,sysinfo,,,"Oracle Corporation",1361011286296
+java.version,sysinfo,,,"1.7.0_03",1361011286296
+java.vm.info,sysinfo,,,"mixed mode, sharing",1361011286296
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1361011286296
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1361011286296
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1361011286296
+java.vm.specification.version,sysinfo,,,"1.7",1361011286296
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1361011286296
+java.vm.version,sysinfo,,,"22.1-b02",1361011286296
+activated,view,org.eclipse.ui.ide,3.7.0.I20110519-0100,"org.eclipse.ui.views.AllMarkersView",1361011288287
+closed,view,org.eclipse.ui.navigator.resources,3.4.300.I20110421-1800,"org.eclipse.ui.navigator.ProjectExplorer",1361011288301
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1361011290109
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1361011291086
+closed,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1361011291149
+stopped,bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.700.v201104070312,"org.eclipse.jst.ws.axis.creation.ui",1361011291506

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://auctionServies.auction.jindal.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://auctionServies.auction.jindal.com" xmlns:intf="http://auctionServies.auction.jindal.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://auctionServies.auction.jindal.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="serviceConsumption">
+    <complexType>
+     <sequence>
+      <element name="customerId" type="xsd:string"/>
+      <element name="productCode" type="xsd:string"/>
+      <element name="quantity" type="xsd:string"/>
+      <element name="uom" type="xsd:string"/>
+      <element name="date" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="serviceConsumptionResponse">
+    <complexType>
+     <sequence>
+      <element name="serviceConsumptionReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="serviceConsumptionRequest">
+
+      <wsdl:part element="impl:serviceConsumption" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="serviceConsumptionResponse">
+
+      <wsdl:part element="impl:serviceConsumptionResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Auctions_WSDL">
+
+      <wsdl:operation name="serviceConsumption">
+
+         <wsdl:input message="impl:serviceConsumptionRequest" name="serviceConsumptionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:serviceConsumptionResponse" name="serviceConsumptionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="Auctions_WSDLSoapBinding" type="impl:Auctions_WSDL">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="serviceConsumption">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="serviceConsumptionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="serviceConsumptionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="Auctions_WSDLService">
+
+      <wsdl:port binding="impl:Auctions_WSDLSoapBinding" name="Auctions_WSDL">
+
+         <wsdlsoap:address location="http://localhost:8080/AuctionServices/services/Auctions_WSDL"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

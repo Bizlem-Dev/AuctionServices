@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="com.jindal.auction.domain.ProductConfigDetails" table="product_config_config" catalog="customerservice">
+       
+	  <id name="configId" type="java.lang.String">
+            <column name="configId" />
+      </id>
+     
+   
+        <property name="configItemId" type="java.lang.String">
+        <column name="configItemId" />
+        </property>
+        
+        <property name="SeqNo" type="java.lang.Integer">
+        <column name="SeqNo" />
+        </property>
+        
+         <property name="configOptionId" type="java.lang.String">
+        <column name="configOptionId" />
+        </property>
+        
+     
+         <property name="productId" type="java.lang.String">
+        <column name="productId" />
+        </property>
+    
+        <property name="quantity" type="java.lang.Double">
+        <column name="quantity" />
+        </property>
+        
+        <property name="productName" type="java.lang.String">
+        <column name="product_name" />
+        </property>
+       
+        
+         <property name="uomId" type="java.lang.String">
+         <column name="uom_id" />
+         </property>
+         
+         <property name="uomName" type="java.lang.String">
+         <column name="uomdescription" />
+         </property>
+         
+           <property name="categoryName" type="java.lang.String">
+         <column name="category_name" />
+         </property>
+         
+      
+        
+        
+    </class>
+</hibernate-mapping>

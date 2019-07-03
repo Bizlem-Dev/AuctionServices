@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="com.jindal.auction.domain.CustomerServiceStatus" table="customer_service_status" catalog="customerservice">
+       
+       
+      <!--  <composite-id name="customerProductId" >
+		   <key-property name="customerId" column="customerId"/>
+		   <key-property name="productCode" column="productCode"/>
+	   </composite-id>  -->
+	   
+	   
+	  <id name="customerId" type="java.lang.String">
+            <column name="customerId" />
+     </id>
+     
+      <property name="productCode" type="java.lang.String">
+        <column name="productCode" />
+        </property>
+        
+        <property name="customerName" type="java.lang.String">
+        <column name="customerName" />
+        </property>
+        
+        <property name="productDescription" type="java.lang.String">
+        <column name="productDescription" />
+        </property>
+        
+        <property name="quantity" type="java.lang.Double">
+        <column name="quantity" />
+        </property>
+        
+        <property name="uom" type="java.lang.String">
+        <column name="uom_description" />
+        </property>
+        
+         <property name="serviceStartDate" type="java.util.Date">
+         <column name="service_start_date" />
+         </property>
+         
+          <property name="serviceEndDate" type="java.util.Date">
+			<column name="service_end_date" />
+		</property>
+          
+          <property name="consumptionQuantity" type="java.lang.Double">
+          <column name="consumptionQuantity" />
+          </property>
+    
+        <property name="lastConsumptionDate" type="java.util.Date"> 
+        <column name="lastConsumptionDate" />
+        </property>
+        
+        
+        
+        
+        
+        
+         <property name="likeDislike" type="java.lang.String">
+        <column name="likeDislike" />
+        </property>
+        
+         <property name="comment" type="java.lang.String">
+        <column name="comment" />
+        </property>
+        
+         <property name="rating" type="java.lang.String">
+        <column name="rating" />
+        </property>
+        
+         <property name="share" type="java.lang.String">
+        <column name="share" />
+        </property>
+        
+         <property name="rfq" type="java.lang.String">
+         <column name="rfq" />
+         </property>
+         
+         <property name="blog" type="java.lang.String">
+         <column name="blog" />
+         </property>
+         
+         
+        
+           <property name="status" type="java.lang.String">
+         <column name="status" />
+         </property>
+        
+         <property name="configId" type="java.lang.String">
+         <column name="config_id" />
+         </property>
+         
+         
+          <property name="shipmentId" type="java.lang.String">
+         <column name="shipment_id" />
+         </property>
+         
+          <property name="orderId" type="java.lang.String">
+         <column name="order_id" />
+         </property>
+        <property name="serviceId" type="java.lang.Integer">
+         <column name="serviceId" />
+         </property>
+        
+    </class>
+</hibernate-mapping>
